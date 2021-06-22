@@ -135,7 +135,7 @@ function transform(obj) {
 
     for (each in obj){
       if (obj[each].includes(letterUppercase)){
-        transformedObj[letterLowercase] = each;
+        transformedObj[letterLowercase] = Number(each);
       } else {
       }
     }
