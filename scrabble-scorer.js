@@ -141,7 +141,7 @@ function transform(obj) {
     }
   }
 
-  transformedObj[" "] = "0";
+  transformedObj[" "] = 0;
 
   return transformedObj;
 };
