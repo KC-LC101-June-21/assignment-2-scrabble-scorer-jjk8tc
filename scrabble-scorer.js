@@ -90,7 +90,7 @@ let scrabbleScore = function(word){
 
 
 
-
+/*
 const scoringAlgorithms = [
   {name: "Simple Score",
   description: "Each letter is worth 1 point.",
@@ -105,7 +105,13 @@ const scoringAlgorithms = [
   scorerFunction: scrabbleScore
   }
 ];
+*/
 
+const scoringAlgorithms = [
+  {scorerFunction: simpleScore},
+  {scorerFunction: vowelBonusScore},
+  {scorerFunction: scrabbleScore}
+];
 
 
 function scorerPrompt() {
